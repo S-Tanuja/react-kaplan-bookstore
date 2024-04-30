@@ -1,0 +1,94 @@
+.container {
+    padding: 10px;
+    width:100%;
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0px 15px 0px 15px;
+
+        img {
+            width: 30px;
+        }
+
+        span {
+            color: #3f51b5;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    .books-container {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .books-label {
+            font-weight: 700;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    .search-field {
+        display: flex;
+        gap: 0.5rem;
+        margin: 0px 30px;
+        padding: 0px 0px 5px 0px;
+        width: 45%;
+        border-bottom: 1px solid #ccc;
+        mat-icon{
+            width:45px;
+        }
+        .search-input {
+            border: none;
+            outline: none;
+            padding: 5px 0;
+            width: 50vw;
+            @media screen and (min-width: 768px) {
+                width: 80vw;
+            }
+        }
+    }
+
+
+    .books-list {
+        .all-books-heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin: 30px;
+            color: grey;
+        }
+
+        .books-wrap {
+            margin: 30px;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .each-book-container {
+            width: 100%;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            border-left: 5px solid rgb(243, 194, 103);
+            border-radius: 5px;
+
+            @media screen and (min-width: 768px) {
+                width: calc(45% - 1rem);
+            }
+
+            .book-heading {
+                font-size: 15px;
+                color: darkgrey;
+                padding-bottom: 5px;
+            }
+
+            .book-info {
+                font-size: 12px;
+                padding-top: 5px;
+            }
+        }
+    }
+}
